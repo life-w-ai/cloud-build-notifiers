@@ -1,8 +1,8 @@
-name: ci
+name: cd
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "master" ]
 
 jobs:
   update-notifier:
