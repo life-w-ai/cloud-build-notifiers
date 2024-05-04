@@ -50,5 +50,12 @@
         "url": "{{.Build.LogUrl}}"
       }
     ]
+  },
+  {
+    "type": "section",
+    "text": {
+      "type": "mrkdwn",
+      "text": "{{ if eq .Params.buildStatus SUCCESS }}✅ Build succeeded!{{ else }}❌ Build failed!{{ end }}"
+    }
   }
 ]
